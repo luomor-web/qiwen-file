@@ -1,0 +1,69 @@
+version: "3.0"
+services:
+  file-mysql80:
+    image: mysql:8.0
+    container_name: file-mysql
+    ports:
+      - "3309:3306"
+    command:
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_unicode_ci
+      --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./db/conf.d:/etc/mysql/conf.d
+      - ./db/data:/var/lib/mysql
+      - ./db/init-sql:/docker-entrypoint-initdb.d
+    networks:
+      - file-network
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+  elasticsearch: #服务的名称
+    image: daocloud.io/library/elasticsearch:7.7.0         #指定镜像的路径
+    restart: always                                        #启动docker，自动运行当前容器
+    container_name: elasticsearch                          #容器名称
+    ports: #指定多个端口
+      - 9200:9200                                          #映射的端口号
+      - 9300:9300
+    networks:
+      - file-network
+    environment:
+      - "ES_JAVA_OPTS=-Xms256M -Xmx512M"
+      - "discovery.type=single-node"
+      - cluster.name=elasticsearch
+  #kibana图形化插件
+  kibana:
+    image: daocloud.io/library/kibana:7.7.0
+    environment:
+      SERVER_NAME: kibana
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    networks:
+      - file-network
+    depends_on:
+      - elasticsearch
+  file-redis:
+    #定义主机名
+    container_name: file-redis
+    #使用的镜像；注意这里的版本要与第2步redis版本一致
+    image: redis:6.0.6
+    #容器的映射端口
+    ports:
+      - 6379:6379 #注意第二个端口必须是redis.conf中的端口号
+    command: redis-server /etc/redis.conf
+    #定义挂载点
+    volumes:
+      - ./data:/data #挂载/docker-compose/redis/data至容器
+      - ./conf/redis.conf:/etc/redis.conf #挂载conf至容器
+    networks:
+      - file-network
+    privileged: true   #环境变量
+    environment:
+      - TZ=Asia/Shanghai
+      - LANG=en_US.UTF-8
+    #docker 重启后，容器自启动
+    restart: always
+networks:
+  file-network:
+    external: true
