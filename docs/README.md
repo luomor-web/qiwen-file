@@ -1,5 +1,7 @@
 ```shell
 mvn clean package
+cd docker
+cp -r ../release file-fe/
 sudo docker-compose build file-service
 
 sudo docker-compose up file-mysql80
