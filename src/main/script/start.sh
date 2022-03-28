@@ -91,7 +91,10 @@ echo "Start app command line: ${EXEC_CMDLINE}" >> $STDOUT_FILE
 echo "Starting $SERVER_NAME ..."
 
 echo nohup ${EXEC_CMDLINE} >> $STDOUT_FILE 2>&1 &
-nohup ${EXEC_CMDLINE} >> $STDOUT_FILE 2>&1 &
+# nohup ${EXEC_CMDLINE} >> $STDOUT_FILE 2>&1 &
+# /home/file/log/qiwen-file/nohup.out
+
+${EXEC_CMDLINE}
 
 # COUNT=0
 # while [ $COUNT -lt 120 ]; do
