@@ -11,4 +11,4 @@ WORKDIR /home/file
 COPY release .
 COPY docker-entrypoint.sh .
 
-ENTRYPOINT ["sh docker-entrypoint.sh"]
+ENTRYPOINT ["sh /home/file/docker-entrypoint.sh"]

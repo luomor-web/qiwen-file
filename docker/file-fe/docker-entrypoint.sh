@@ -1,4 +1,4 @@
 #!/bin/bash
-cd release/bin
+cd /home/file/release/bin
 
 sh start.sh
