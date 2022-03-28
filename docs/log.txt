@@ -104,3 +104,24 @@ file-service     |      at org.apache.tomcat.util.threads.ThreadPoolExecutor$Wor
 file-service     |      at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.58.jar:9.0.58]
 file-service     |      at java.lang.Thread.run(Thread.java:748) [na:1.8.0_312]
 file-service     |
+
+
+http://localhost:8081/onlyoffice?fileUrl=http%3A%2F%2Flocalhost%3A8081%2Fapi%2Ffiletransfer%2Fpreview%3FuserFileId%3D4%26isMin%3Dfalse%26shareBatchNum%3Dundefined%26extractionCode%3Dundefined%26token%3DBearer%20eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU&fileName=EHR%E7%B3%BB%E7%BB%9F%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%94%A8%E6%88%B7%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C.docx&filePath=upload%2F20220328%2F89a7501903c2da41363eb5a84fb658d9.docx&fileId=2&userFileId=4&extendName=docx&ot=detail
+
+http://localhost:8081/onlyoffice?
+fileUrl=http%3A%2F%2Flocalhost%3A8081%2Fapi%2Ffiletransfer%2Fpreview%3FuserFileId%3D4%26isMin%3Dfalse%26shareBatchNum%3Dundefined%26extractionCode%3Dundefined%26token%3DBearer%20eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU
+&fileName=EHR%E7%B3%BB%E7%BB%9F%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%94%A8%E6%88%B7%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C.docx
+&filePath=upload%2F20220328%2F89a7501903c2da41363eb5a84fb658d9.docx
+&fileId=2
+&userFileId=4
+&extendName=docx
+&ot=detail
+
+http://localhost:8081/api/filetransfer/preview?userFileId=4&isMin=false&shareBatchNum=undefined&extractionCode=undefined&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU
+
+http://localhost:8081/api/filetransfer/preview?
+userFileId=4
+&isMin=false
+&shareBatchNum=undefined
+&extractionCode=undefined
+&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU
