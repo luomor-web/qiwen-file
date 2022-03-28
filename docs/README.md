@@ -9,14 +9,19 @@ sudo docker-compose rm file-doc
 find . -name "docker-compose.yml"|xargs -I {} grep -r 'elasticsearch' {}
 
 sudo docker exec file-doc sudo supervisorctl start ds:example
+sudo docker exec file-doc sudo supervisorctl stop ds:example
 sudo docker exec file-doc sudo sed 's,autostart=false,autostart=true,' -i /etc/supervisor/conf.d/ds-example.conf
+
+./var/www/onlyoffice/documentserver-example/welcome/css/logo.svg
+sudo docker exec -it file-doc bash
+sudo docker cp 202107291433265023.svg file-doc:/var/www/onlyoffice/documentserver-example/welcome/css/logo.svg
 
 sudo docker run -i -t -d -p 80:80 --restart=always \
     -v /app/onlyoffice/DocumentServer/logs:/var/log/onlyoffice  \
     -v /app/onlyoffice/DocumentServer/data:/var/www/onlyoffice/Data  \
     -v /app/onlyoffice/DocumentServer/lib:/var/lib/onlyoffice \
     -v /app/onlyoffice/DocumentServer/db:/var/lib/postgresql  onlyoffice/documentserver
-    
+
 sudo docker network create --subnet=172.16.0.0/16 file-network
 ```
 
