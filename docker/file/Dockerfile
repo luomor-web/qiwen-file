@@ -16,5 +16,6 @@ COPY release .
 COPY docker-entrypoint.sh .
 
 RUN chmod +x bin/*.sh
+RUN chmod -R 777 /home/file/static
 
 ENTRYPOINT ["/home/file/docker-entrypoint.sh"]
