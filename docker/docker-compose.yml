@@ -93,7 +93,7 @@ services:
     ports:
       - "8022:8022"
     volumes:
-      - ./file/data/static:/home/file/static
+      - ./file/static:/home/file/static
       - ./file/qiwenshare:/qiwenshare
       - /etc/localtime:/etc/localtime
     networks:
