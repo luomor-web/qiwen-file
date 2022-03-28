@@ -125,3 +125,100 @@ userFileId=4
 &shareBatchNum=undefined
 &extractionCode=undefined
 &token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU
+
+http://49.232.6.131:8017/6.4.2-6/web-apps/apps/documenteditor/main/index.html?_dc=6.4.2-6&lang=zh&customer=ONLYOFFICE&frameEditorId=placeholder&mode=view&parentOrigin=http://localhost:8081
+
+file-doc         | ==> /var/log/onlyoffice/documentserver/converter/out.log <==
+file-doc         | [2022-03-28T11:42:41.918] [ERROR] nodeJS - error downloadFile:url=http://localhost:8081/api/filetransfer/preview?userFileId=4&isMin=false&shareBatchNum=undefined&extractionCode=undefined&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU;attempt=1;code:ECONNREFUSED;connect:null;(id=1358308795)
+file-doc         | Error: connect ECONNREFUSED 127.0.0.1:8081
+file-doc         |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
+file-doc         | [2022-03-28T11:42:42.920] [ERROR] nodeJS - error downloadFile:url=http://localhost:8081/api/filetransfer/preview?userFileId=4&isMin=false&shareBatchNum=undefined&extractionCode=undefined&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU;attempt=2;code:ECONNREFUSED;connect:null;(id=1358308795)
+file-doc         | Error: connect ECONNREFUSED 127.0.0.1:8081
+file-doc         |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
+file-doc         | [2022-03-28T11:42:43.923] [ERROR] nodeJS - error downloadFile:url=http://localhost:8081/api/filetransfer/preview?userFileId=4&isMin=false&shareBatchNum=undefined&extractionCode=undefined&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU;attempt=3;code:ECONNREFUSED;connect:null;(id=1358308795)
+file-doc         | Error: connect ECONNREFUSED 127.0.0.1:8081
+file-doc         |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
+file-doc         | [2022-03-28T11:43:10.196] [ERROR] nodeJS - error downloadFile:url=http://localhost:8081/api/filetransfer/preview?userFileId=4&isMin=false&shareBatchNum=undefined&extractionCode=undefined&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU;attempt=1;code:ECONNREFUSED;connect:null;(id=1358308795)
+file-doc         | Error: connect ECONNREFUSED 127.0.0.1:8081
+file-doc         |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
+file-doc         | [2022-03-28T11:43:11.198] [ERROR] nodeJS - error downloadFile:url=http://localhost:8081/api/filetransfer/preview?userFileId=4&isMin=false&shareBatchNum=undefined&extractionCode=undefined&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU;attempt=2;code:ECONNREFUSED;connect:null;(id=1358308795)
+file-doc         | Error: connect ECONNREFUSED 127.0.0.1:8081
+file-doc         |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
+file-doc         | [2022-03-28T11:43:12.200] [ERROR] nodeJS - error downloadFile:url=http://localhost:8081/api/filetransfer/preview?userFileId=4&isMin=false&shareBatchNum=undefined&extractionCode=undefined&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU;attempt=3;code:ECONNREFUSED;connect:null;(id=1358308795)
+file-doc         | Error: connect ECONNREFUSED 127.0.0.1:8081
+file-doc         |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
+file-doc         | [2022-03-28T11:44:55.960] [ERROR] nodeJS - error downloadFile:url=http://49.232.6.131:8022/api/filetransfer/preview?userFileId=4&isMin=false&shareBatchNum=undefined&extractionCode=undefined&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU;attempt=1;code:null;connect:null;(id=1358308795)
+file-doc         | Error: Error response: statusCode:404; headers:{"vary":"Origin, Access-Control-Request-Method, Access-Control-Request-Headers","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"0","content-length":"0","date":"Mon, 28 Mar 2022 11:44:55 GMT","keep-alive":"timeout=60","connection":"keep-alive"}; body:
+file-doc         |
+file-doc         |     at Request._callback (/snapshot/server/build/server/Common/sources/utils.js:0:0)
+file-doc         |     at Request.init.self.callback (/snapshot/server/build/server/Common/node_modules/request/request.js:185:22)
+file-doc         |     at Request.emit (events.js:198:13)
+file-doc         |     at Request.<anonymous> (/snapshot/server/build/server/Common/node_modules/request/request.js:1154:10)
+file-doc         |     at Request.emit (events.js:198:13)
+file-doc         |     at IncomingMessage.<anonymous> (/snapshot/server/build/server/Common/node_modules/request/request.js:1076:12)
+file-doc         |     at Object.onceWrapper (events.js:286:20)
+file-doc         |     at IncomingMessage.emit (events.js:203:15)
+file-doc         |     at endReadableNT (_stream_readable.js:1145:12)
+file-doc         |     at process._tickCallback (internal/process/next_tick.js:63:19)
+file-doc         | [2022-03-28T11:44:56.970] [ERROR] nodeJS - error downloadFile:url=http://49.232.6.131:8022/api/filetransfer/preview?userFileId=4&isMin=false&shareBatchNum=undefined&extractionCode=undefined&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU;attempt=2;code:null;connect:null;(id=1358308795)
+file-doc         | Error: Error response: statusCode:404; headers:{"vary":"Origin, Access-Control-Request-Method, Access-Control-Request-Headers","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"0","content-length":"0","date":"Mon, 28 Mar 2022 11:44:56 GMT","keep-alive":"timeout=60","connection":"keep-alive"}; body:
+file-doc         |
+file-doc         |     at Request._callback (/snapshot/server/build/server/Common/sources/utils.js:0:0)
+file-doc         |     at Request.init.self.callback (/snapshot/server/build/server/Common/node_modules/request/request.js:185:22)
+file-doc         |     at Request.emit (events.js:198:13)
+file-doc         |     at Request.<anonymous> (/snapshot/server/build/server/Common/node_modules/request/request.js:1154:10)
+file-doc         |     at Request.emit (events.js:198:13)
+file-doc         |     at IncomingMessage.<anonymous> (/snapshot/server/build/server/Common/node_modules/request/request.js:1076:12)
+file-doc         |     at Object.onceWrapper (events.js:286:20)
+file-doc         |     at IncomingMessage.emit (events.js:203:15)
+file-doc         |     at endReadableNT (_stream_readable.js:1145:12)
+file-doc         |     at process._tickCallback (internal/process/next_tick.js:63:19)
+file-doc         | [2022-03-28T11:44:57.979] [ERROR] nodeJS - error downloadFile:url=http://49.232.6.131:8022/api/filetransfer/preview?userFileId=4&isMin=false&shareBatchNum=undefined&extractionCode=undefined&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU;attempt=3;code:null;connect:null;(id=1358308795)
+file-doc         | Error: Error response: statusCode:404; headers:{"vary":"Origin, Access-Control-Request-Method, Access-Control-Request-Headers","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"0","content-length":"0","date":"Mon, 28 Mar 2022 11:44:57 GMT","keep-alive":"timeout=60","connection":"keep-alive"}; body:
+file-doc         |
+file-doc         |     at Request._callback (/snapshot/server/build/server/Common/sources/utils.js:0:0)
+file-doc         |     at Request.init.self.callback (/snapshot/server/build/server/Common/node_modules/request/request.js:185:22)
+file-doc         |     at Request.emit (events.js:198:13)
+file-doc         |     at Request.<anonymous> (/snapshot/server/build/server/Common/node_modules/request/request.js:1154:10)
+file-doc         |     at Request.emit (events.js:198:13)
+file-doc         |     at IncomingMessage.<anonymous> (/snapshot/server/build/server/Common/node_modules/request/request.js:1076:12)
+file-doc         |     at Object.onceWrapper (events.js:286:20)
+file-doc         |     at IncomingMessage.emit (events.js:203:15)
+file-doc         |     at endReadableNT (_stream_readable.js:1145:12)
+file-doc         |     at process._tickCallback (internal/process/next_tick.js:63:19)
+file-doc         | [2022-03-28T11:45:39.650] [ERROR] nodeJS - error downloadFile:url=http://localhost:8081/api/filetransfer/preview?userFileId=4&isMin=false&shareBatchNum=undefined&extractionCode=undefined&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU;attempt=1;code:ECONNREFUSED;connect:null;(id=1358308795)
+file-doc         | Error: connect ECONNREFUSED 127.0.0.1:8081
+file-doc         |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
+file-doc         | [2022-03-28T11:45:40.652] [ERROR] nodeJS - error downloadFile:url=http://localhost:8081/api/filetransfer/preview?userFileId=4&isMin=false&shareBatchNum=undefined&extractionCode=undefined&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU;attempt=2;code:ECONNREFUSED;connect:null;(id=1358308795)
+file-doc         | Error: connect ECONNREFUSED 127.0.0.1:8081
+file-doc         |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
+file-doc         | [2022-03-28T11:45:41.654] [ERROR] nodeJS - error downloadFile:url=http://localhost:8081/api/filetransfer/preview?userFileId=4&isMin=false&shareBatchNum=undefined&extractionCode=undefined&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU;attempt=3;code:ECONNREFUSED;connect:null;(id=1358308795)
+file-doc         | Error: connect ECONNREFUSED 127.0.0.1:8081
+file-doc         |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
+file-doc         |
+file-doc         | ==> /var/log/onlyoffice/documentserver/metrics/out.log <==
+file-doc         | Flushing stats at  Mon Mar 28 2022 11:48:09 GMT+0000 (Coordinated Universal Time)
+file-doc         | { counters:
+file-doc         |    { 'statsd.bad_lines_seen': 0,
+file-doc         |      'statsd.packets_received': 0,
+file-doc         |      'statsd.metrics_received': 0 },
+file-doc         |   timers: {},
+file-doc         |   gauges: { 'statsd.timestamp_lag': 0 },
+file-doc         |   timer_data: {},
+file-doc         |   counter_rates:
+file-doc         |    { 'statsd.bad_lines_seen': 0,
+file-doc         |      'statsd.packets_received': 0,
+file-doc         |      'statsd.metrics_received': 0 },
+file-doc         |   sets: {},
+file-doc         |   pctThreshold: [ 90 ] }
+file-doc         |
+file-doc         | ==> /var/log/onlyoffice/documentserver/converter/out.log <==
+file-doc         | [2022-03-28T11:50:25.880] [ERROR] nodeJS - error downloadFile:url=http://localhost:8081/api/filetransfer/preview?userFileId=4&isMin=false&shareBatchNum=undefined&extractionCode=undefined&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU;attempt=1;code:ECONNREFUSED;connect:null;(id=1358308795)
+file-doc         | Error: connect ECONNREFUSED 127.0.0.1:8081
+file-doc         |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
+file-doc         | [2022-03-28T11:50:26.881] [ERROR] nodeJS - error downloadFile:url=http://localhost:8081/api/filetransfer/preview?userFileId=4&isMin=false&shareBatchNum=undefined&extractionCode=undefined&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU;attempt=2;code:ECONNREFUSED;connect:null;(id=1358308795)
+file-doc         | Error: connect ECONNREFUSED 127.0.0.1:8081
+file-doc         |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
+file-doc         | [2022-03-28T11:50:27.883] [ERROR] nodeJS - error downloadFile:url=http://localhost:8081/api/filetransfer/preview?userFileId=4&isMin=false&shareBatchNum=undefined&extractionCode=undefined&token=Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJxaXdlbi1jbXMiLCJleHAiOjE2NDkwNzIyODksInN1YiI6IntcInVzZXJJZFwiOjF9IiwiYXVkIjoicWl3ZW5zaGFyZSIsImlhdCI6MTY0ODQ2NzQ4OX0.W7aTHA2Of5TjluZ2MvVN5Y86l-mGJg1_badMMHmJ_MU;attempt=3;code:ECONNREFUSED;connect:null;(id=1358308795)
+file-doc         | Error: connect ECONNREFUSED 127.0.0.1:8081
+file-doc         |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
