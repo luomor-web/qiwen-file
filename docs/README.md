@@ -6,10 +6,18 @@ sudo docker run -i -t -d -p 80:80 --restart=always \
     -v /app/onlyoffice/DocumentServer/data:/var/www/onlyoffice/Data  \
     -v /app/onlyoffice/DocumentServer/lib:/var/lib/onlyoffice \
     -v /app/onlyoffice/DocumentServer/db:/var/lib/postgresql  onlyoffice/documentserver
+    
+sudo docker network create --subnet=172.16.0.0/16 file-network
 ```
 
 ```
 roncoo-education
 jetlinks-community
 cskefu
+```
+
+```
+A类百 10.0.0.0-10.255.255.255 网络数：1
+B类 172.16.0.0-172.31.255.255 网络数：16
+C类 192.168.0.0-192.168.255.255 网络数：255
 ```
