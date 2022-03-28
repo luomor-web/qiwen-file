@@ -39,6 +39,8 @@ sudo docker-compose rm file-service
 
 find . -name "docker-compose.yml"|xargs -I {} grep -r 'elasticsearch' {}
 
+docker exec -it file-service bash
+
 sudo docker exec file-doc sudo supervisorctl start ds:example
 sudo docker exec file-doc sudo supervisorctl stop ds:example
 sudo docker exec file-doc sudo sed 's,autostart=false,autostart=true,' -i /etc/supervisor/conf.d/ds-example.conf
