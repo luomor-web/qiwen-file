@@ -58,6 +58,11 @@ sudo docker run -i -t -d -p 80:80 --restart=always \
 sudo docker run -i -t -d -p 80:80 -p 443:443 \
     -e LETS_ENCRYPT_DOMAIN=yourdomain.com -e LETS_ENCRYPT_MAIL=email@example.com  onlyoffice/documentserver
     
+sudo docker run -i -t -d -p 443:443 --restart=always \
+    -v /app/onlyoffice/DocumentServer/data:/var/www/onlyoffice/Data  onlyoffice/documentserver
+
+sudo docker run -i -t -d -p 1443:443 --restart=always onlyoffice/documentserver
+
 sudo docker network create --subnet=172.16.0.0/16 file-network
 
 /qiwenshare/qiwen-file/log/web.log
