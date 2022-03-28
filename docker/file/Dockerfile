@@ -1,7 +1,7 @@
 FROM openjdk:8-jre
 
 RUN apt-get update
-RUN apt-get -y install netstat
+RUN apt-get -y install net-tools
 
 RUN fc-cache
 RUN fc-list
