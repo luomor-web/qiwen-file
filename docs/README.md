@@ -56,6 +56,7 @@ sudo docker run -i -t -d -p 80:80 -p 443:443 \
 sudo docker network create --subnet=172.16.0.0/16 file-network
 
 /qiwenshare/qiwen-file/log/web.log
+/home/file/static/upload/20220328/269756914e4f69ecec15337d558cd2bd.svg
 
 mysql -h127.0.0.1 -uroot -p -P3309
 root
