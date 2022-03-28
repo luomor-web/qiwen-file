@@ -90,19 +90,19 @@ EXEC_CMDLINE="java -classpath ${CLASSPATH} ${USER_VMARGS} ${GC_OPTS} ${JAVA_JMX_
 echo "Start app command line: ${EXEC_CMDLINE}" >> $STDOUT_FILE
 echo "Starting $SERVER_NAME ..."
 
+echo nohup ${EXEC_CMDLINE} >> $STDOUT_FILE 2>&1 &
 nohup ${EXEC_CMDLINE} >> $STDOUT_FILE 2>&1 &
 
-
-COUNT=0
-while [ $COUNT -lt 120 ]; do
-    echo -e ".\c"
-    sleep 1
-    IS_LISTENED=`netstat -an | grep -w LISTEN | grep -w $SERVER_PORT`
-    let COUNT++  
-    if [ -n "$IS_LISTENED" ]; then
-        COUNT=1000
-    fi
-done
+# COUNT=0
+# while [ $COUNT -lt 120 ]; do
+#     echo -e ".\c"
+#     sleep 1
+#     IS_LISTENED=`netstat -an | grep -w LISTEN | grep -w $SERVER_PORT`
+#     let COUNT++
+#     if [ -n "$IS_LISTENED" ]; then
+#         COUNT=1000
+#     fi
+# done
 
 echo "Console File: $STDOUT_FILE"
 echo "--------start app $SERVER_NAME on $(uname -n) (pid=$$)--------"
