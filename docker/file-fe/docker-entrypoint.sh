@@ -1,1 +1,4 @@
-../file/docker-entrypoint.sh
+#!/bin/bash
+cd release/bin
+
+sh start.sh
