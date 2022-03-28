@@ -13,4 +13,4 @@ COPY docker-entrypoint.sh .
 
 RUN ls /home/file
 
-ENTRYPOINT ["sh /home/file/docker-entrypoint.sh"]
+ENTRYPOINT ["/home/file/docker-entrypoint.sh"]
