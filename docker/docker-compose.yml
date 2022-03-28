@@ -85,11 +85,11 @@ services:
       - LANG=en_US.UTF-8
     #docker 重启后，容器自启动
     restart: always
-  file:
+  file-service:
     build:
       context: file-fe
       dockerfile: Dockerfile
-    container_name: file-fe
+    container_name: file-service
     ports:
       - "8022:8022"
     volumes:

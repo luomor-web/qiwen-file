@@ -1,10 +1,35 @@
 ```shell
 sudo docker-compose build file-service
 
+sudo docker-compose up file-mysql80
+sudo docker-compose up -d file-mysql80
+sudo docker-compose stop file-mysql80
+sudo docker-compose rm file-mysql80
+
+sudo docker-compose up elasticsearch
+sudo docker-compose up -d elasticsearch
+sudo docker-compose stop elasticsearch
+sudo docker-compose rm elasticsearch
+
+sudo docker-compose up kibana
+sudo docker-compose up -d kibana
+sudo docker-compose stop kibana
+sudo docker-compose rm kibana
+
+sudo docker-compose up file-redis
+sudo docker-compose up -d file-redis
+sudo docker-compose stop file-redis
+sudo docker-compose rm file-redis
+
 sudo docker-compose up file-doc
 sudo docker-compose up -d file-doc
 sudo docker-compose stop file-doc
 sudo docker-compose rm file-doc
+
+sudo docker-compose up file-service
+sudo docker-compose up -d file-service
+sudo docker-compose stop file-service
+sudo docker-compose rm file-service
 
 find . -name "docker-compose.yml"|xargs -I {} grep -r 'elasticsearch' {}
 
