@@ -85,6 +85,18 @@ services:
       - LANG=en_US.UTF-8
     #docker 重启后，容器自启动
     restart: always
+  file:
+    build:
+      context: file-fe
+      dockerfile: Dockerfile
+    container_name: file-fe
+    ports:
+      - "8022:8022"
+    volumes:
+      - /etc/localtime:/etc/localtime
+    depends_on:
+      - file-mysql80
+    restart: always
 networks:
   file-network:
     external: true
