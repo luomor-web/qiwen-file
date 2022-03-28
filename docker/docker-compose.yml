@@ -70,7 +70,7 @@ services:
     image: onlyoffice/documentserver
     #容器的映射端口
     ports:
-      - 8017:80 #注意第二个端口必须是redis.conf中的端口号
+      - 8017:80
       - 8021:443
     #定义挂载点
     volumes:
