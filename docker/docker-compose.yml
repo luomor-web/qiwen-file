@@ -83,6 +83,8 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - LANG=en_US.UTF-8
+      - LETS_ENCRYPT_DOMAIN=docs.7otech.com
+      - LETS_ENCRYPT_MAIL=admin@7otech.com
     #docker 重启后，容器自启动
     restart: always
 networks:
