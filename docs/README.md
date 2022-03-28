@@ -1,4 +1,11 @@
 ```shell
+sudo docker-compose build file-service
+
+sudo docker-compose up file-doc
+sudo docker-compose up -d file-doc
+sudo docker-compose stop file-doc
+sudo docker-compose rm file-doc
+
 find . -name "docker-compose.yml"|xargs -I {} grep -r 'elasticsearch' {}
 
 sudo docker run -i -t -d -p 80:80 --restart=always \
