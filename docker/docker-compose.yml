@@ -64,6 +64,26 @@ services:
       - LANG=en_US.UTF-8
     #docker 重启后，容器自启动
     restart: always
+  file-doc:
+    #定义主机名
+    container_name: file-doc
+    image: onlyoffice/documentserver
+    #容器的映射端口
+    ports:
+      - 8017:80 #注意第二个端口必须是redis.conf中的端口号
+    #定义挂载点
+    volumes:
+      - ./DocumentServer/logs:/var/log/onlyoffice
+      - ./DocumentServer/data:/var/www/onlyoffice/Data
+      - ./DocumentServer/lib:/var/lib/onlyoffice
+      - ./DocumentServer/db:/var/lib/postgresql
+    networks:
+      - file-network
+    environment:
+      - TZ=Asia/Shanghai
+      - LANG=en_US.UTF-8
+    #docker 重启后，容器自启动
+    restart: always
 networks:
   file-network:
     external: true
