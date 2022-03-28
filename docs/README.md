@@ -26,6 +26,8 @@ sudo docker run -i -t -d -p 80:80 -p 443:443 \
     -e LETS_ENCRYPT_DOMAIN=yourdomain.com -e LETS_ENCRYPT_MAIL=email@example.com  onlyoffice/documentserver
     
 sudo docker network create --subnet=172.16.0.0/16 file-network
+
+create database file default character set utf8mb4 collate utf8mb4_unicode_ci;
 ```
 
 ```
