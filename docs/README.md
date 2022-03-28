@@ -8,6 +8,9 @@ sudo docker-compose rm file-doc
 
 find . -name "docker-compose.yml"|xargs -I {} grep -r 'elasticsearch' {}
 
+sudo docker exec docker-27225 sudo supervisorctl start ds:example
+sudo docker exec docker-27225 sudo sed 's,autostart=false,autostart=true,' -i /etc/supervisor/conf.d/ds-example.conf
+
 sudo docker run -i -t -d -p 80:80 --restart=always \
     -v /app/onlyoffice/DocumentServer/logs:/var/log/onlyoffice  \
     -v /app/onlyoffice/DocumentServer/data:/var/www/onlyoffice/Data  \
