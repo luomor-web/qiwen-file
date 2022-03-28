@@ -29,6 +29,9 @@ sudo docker-compose up -d file-doc
 sudo docker-compose stop file-doc
 sudo docker-compose rm file-doc
 
+chmod -R 777 docker/file/qiwenshare
+chmod -R 777 docker/file/static
+
 sudo docker-compose up file-service
 sudo docker-compose up -d file-service
 sudo docker-compose stop file-service
