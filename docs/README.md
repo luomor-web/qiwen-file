@@ -1,4 +1,5 @@
 ```shell
+mvn clean package
 sudo docker-compose build file-service
 
 sudo docker-compose up file-mysql80
