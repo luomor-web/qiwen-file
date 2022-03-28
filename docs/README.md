@@ -56,7 +56,11 @@ sudo docker run -i -t -d -p 80:80 -p 443:443 \
 sudo docker network create --subnet=172.16.0.0/16 file-network
 
 mysql -h127.0.0.1 -uroot -p -P3309
+root
 create database file default character set utf8mb4 collate utf8mb4_unicode_ci;
+
+mysql -h127.0.0.1 -uroot -p -P3309 file < src/main/resources/import.sql
+root
 ```
 
 ```
