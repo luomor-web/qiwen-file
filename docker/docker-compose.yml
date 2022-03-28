@@ -94,6 +94,8 @@ services:
       - "8022:8022"
     volumes:
       - /etc/localtime:/etc/localtime
+    networks:
+      - file-network
     depends_on:
       - file-mysql80
     restart: always
