@@ -40,7 +40,8 @@ sudo docker-compose rm file-service
 find . -name "docker-compose.yml"|xargs -I {} grep -r 'elasticsearch' {}
 find . -name "docker-compose.yml"|xargs -I {} grep -r 'nginx' {}
 
-docker exec -it file-service bash
+sudo docker exec -it file-service bash
+netstat -tlnp
 
 sudo docker exec file-doc sudo supervisorctl start ds:example
 sudo docker exec file-doc sudo supervisorctl stop ds:example
@@ -48,6 +49,7 @@ sudo docker exec file-doc sudo sed 's,autostart=false,autostart=true,' -i /etc/s
 
 ./var/www/onlyoffice/documentserver-example/welcome/css/logo.svg
 sudo docker exec -it file-doc bash
+netstat -tlnp
 sudo docker cp 202107291433265023.svg file-doc:/var/www/onlyoffice/documentserver-example/welcome/css/logo.svg
 
 sudo docker run -i -t -d -p 80:80 --restart=always \
