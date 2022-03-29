@@ -224,3 +224,5 @@ file-doc         | Error: connect ECONNREFUSED 127.0.0.1:8081
 file-doc         |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1107:14)
 
 <html> <head><title>413 Request Entity Too Large</title></head> <body> <center><h1>413 Request Entity Too Large</h1></center> <hr><center>nginx</center> </body> </html> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page --> <!-- a padding to disable MSIE and Chrome friendly error page -->
+
+2022/03/29 15:59:17 [error] 1437707#1437707: *504 client intended to send too large body: 1180460 bytes, client: 59.108.166.0, server: file.7otech.com, request: "POST /api/filetransfer/uploadfile HTTP/2.0", host: "file.7otech.com", referrer: "https://file.7otech.com/file?filePath=%2Ftest%2F&fileType=0"

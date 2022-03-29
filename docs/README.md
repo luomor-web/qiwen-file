@@ -137,6 +137,26 @@ sudo docker run -i -t -d -p 1443:443 \
 
 ```
 onlyoffice https
+
+adfGeoTransform[0] /* top left x 左上角x坐标*/
+adfGeoTransform[1] /* w--e pixel resolution 东西方向上的像素分辨率*/
+adfGeoTransform[2] /* rotation, 0 if image is "north up" 如果北边朝上，地图的旋转角度*/
+adfGeoTransform[3] /* top left y 左上角y坐标*/
+adfGeoTransform[4] /* rotation, 0 if image is "north up" 如果北边朝上，地图的旋转角度*/
+adfGeoTransform[5] /* n-s pixel resolution 南北方向上的像素分辨率*/
+
+计算某一坐标对应像素的相对位置(pixel offset)
+
+PhotoScan
+https://github.com/chsasank/Image-Rectification
+https://blog.csdn.net/Chaolei3/article/details/79670495
+https://github.com/alibaba/sreworks
+https://github.com/rotemtzaban/STIT
+https://github.com/obss/sahi
+https://github.com/mickael-kerjean/filestash
+https://github.com/cloudreve/Cloudreve
+
+web ssh
 ```
 
 ```
