@@ -84,6 +84,53 @@ admin
 walrus  海象
 ```
 
+```shell
+openssl genrsa -out onlyoffice.key 2048
+openssl req -new -key onlyoffice.key -out onlyoffice.csr
+
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [XX]:CN
+State or Province Name (full name) []:Beijing
+Locality Name (eg, city) [Default City]:Beijing
+Organization Name (eg, company) [Default Company Ltd]:yunqiic
+Organizational Unit Name (eg, section) []:dev
+Common Name (eg, your name or your server's hostname) []:yunqiic.com
+Email Address []:1097692918@qq.com
+
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:
+An optional company name []:
+
+openssl x509 -req -days 365 -in onlyoffice.csr -signkey onlyoffice.key -out onlyoffice.crt
+openssl dhparam -out dhparam.pem 2048
+
+/app/onlyoffice/DocumentServer/data/certs
+mkdir -p /app/onlyoffice/DocumentServer/data/certs
+
+cp onlyoffice.key /app/onlyoffice/DocumentServer/data/certs/
+cp onlyoffice.crt /app/onlyoffice/DocumentServer/data/certs/
+cp dhparam.pem /app/onlyoffice/DocumentServer/data/certs/
+chmod 400 /app/onlyoffice/DocumentServer/data/certs/onlyoffice.key
+
+sudo docker run -i -t -d -p 443:443 \
+ -v /app/onlyoffice/DocumentServer/data:/var/www/onlyoffice/Data onlyoffice/documentserver
+ 
+cp onlyoffice.key data/certs/
+cp onlyoffice.crt data/certs/
+cp dhparam.pem data/certs/
+chmod 400 data/certs/onlyoffice.key
+
+sudo docker run -i -t -d -p 1443:443 \
+ -v $(pwd)/data:/var/www/onlyoffice/Data onlyoffice/documentserver
+```
+
 ```
 roncoo-education
 jetlinks-community
