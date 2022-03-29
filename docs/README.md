@@ -91,6 +91,64 @@ ALIYUN_OSS(1, "阿里云OSS对象存储"),
 FAST_DFS(2, "fastDFS集群存储"),
 MINIO(3, "minio存储"),
 QINIUYUN_KODO(4, "七牛云KODO对象存储");
+
+show tables;
++--------------------+
+| Tables_in_file     |
++--------------------+
+| commonfile         |
+| file               |
+| fileclassification |
+| fileextend         |
+| filepermission     |
+| filetype           |
+| hibernate_sequence |
+| image              |
+| notice             |
+| operationlog       |
+| permission         |
+| picturefile        |
+| recoveryfile       |
+| role               |
+| role_permission    |
+| share              |
+| sharefile          |
+| storage            |
+| sysparam           |
+| uploadtask         |
+| uploadtaskdetail   |
+| user               |
+| user_role          |
+| userfile           |
+| userlogininfo      |
++--------------------+
+25 rows in set (0.00 sec)
+
+select * from commonfile;
+select * from file;
+select * from fileclassification;
+select * from fileextend;
+select * from filepermission;
+select * from filetype;
+select * from hibernate_sequence;
+select * from image;
+select * from notice;
+select * from operationlog;
+select * from permission;
+select * from picturefile;
+select * from recoveryfile;
+select * from role;
+select * from role_permission;
+select * from share;
+select * from sharefile;
+select * from storage;
+select * from sysparam;
+select * from uploadtask;
+select * from uploadtaskdetail;
+select * from user;
+select * from user_role;
+select * from userfile;
+select * from userlogininfo;
 ```
 
 ```
