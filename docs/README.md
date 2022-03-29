@@ -121,6 +121,8 @@ chmod 400 /app/onlyoffice/DocumentServer/data/certs/onlyoffice.key
 
 sudo docker run -i -t -d -p 443:443 \
  -v /app/onlyoffice/DocumentServer/data:/var/www/onlyoffice/Data onlyoffice/documentserver
+
+mkdir -p data/certs
  
 cp onlyoffice.key data/certs/
 cp onlyoffice.crt data/certs/
