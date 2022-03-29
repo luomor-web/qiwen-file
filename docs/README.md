@@ -38,6 +38,7 @@ sudo docker-compose stop file-service
 sudo docker-compose rm file-service
 
 find . -name "docker-compose.yml"|xargs -I {} grep -r 'elasticsearch' {}
+find . -name "docker-compose.yml"|xargs -I {} grep -r 'nginx' {}
 
 docker exec -it file-service bash
 
