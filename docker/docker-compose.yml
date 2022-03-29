@@ -95,6 +95,7 @@ services:
     volumes:
       - ./file/static:/home/file/static
       - ./file/qiwenshare:/qiwenshare
+      - ./file/conf/config:/home/file/conf/config
       - /etc/localtime:/etc/localtime
     networks:
       - file-network
