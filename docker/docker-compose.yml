@@ -96,6 +96,7 @@ services:
       - ./file/static:/home/file/static
       - ./file/qiwenshare:/qiwenshare
       - ./file/conf/config:/home/file/conf/config
+      - ./file/data/cloud:/data/cloud
       - /etc/localtime:/etc/localtime
     networks:
       - file-network
