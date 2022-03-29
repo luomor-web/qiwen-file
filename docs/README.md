@@ -147,6 +147,7 @@ adfGeoTransform[5] /* n-s pixel resolution 南北方向上的像素分辨率*/
 
 计算某一坐标对应像素的相对位置(pixel offset)
 
+APIAuto
 PhotoScan
 https://github.com/chsasank/Image-Rectification
 https://blog.csdn.net/Chaolei3/article/details/79670495
